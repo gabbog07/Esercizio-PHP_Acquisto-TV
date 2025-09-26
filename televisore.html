@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Consigli TV</title>
+</head>
+<body>
+    <h2>Inserisci i dati del televisore</h2>
+    <form action="consigli.php" method="post">
+        <label>Marca:</label>
+        <input type="text" name="marca" required><br><br>
+
+        <label>Modello:</label>
+        <input type="text" name="modello" required><br><br>
+
+        <label>Porte HDMI:</label>
+        <input type="number" name="porte_hdmi" min="1" required><br><br>
+
+        <label>Refresh rate (Hz):</label>
+        <input type="number" name="refresh_rate" min="1" required><br><br>
+
+        <label>Risoluzione:</label>
+        <select name="risoluzione" required>
+            <option value="HD Ready">HD Ready</option>
+            <option value="Full HD">Full HD</option>
+            <option value="Ultra HD">Ultra HD</option>
+            <option value="4K">4K</option>
+        </select><br><br>
+
+        <input type="submit" value="Invia">
+    </form>
+</body>
+</html>
